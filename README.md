@@ -1,25 +1,33 @@
-# Title: Predicting 5G Users: An Artificial Intelligence Approach
+# Predicting 5G Users: An Artificial Intelligence Approach
 
 ## Abstract:
 
-This project aims to explore and solve real-life problems using artificial intelligence (AI) techniques implemented in the Python programming environment. The task at hand is to predict whether a given sample belongs to a 5G user based on user demographics, communication-related data (such as usage patterns, tariff information, and regional data), and a variety of features. The project involves training and comparing multiple AI models and analyzing their performance using the Area Under the Curve (AUC) evaluation metric. The final deliverables include the source code and a comprehensive report summarizing the analysis and findings.
+This project aims to explore and solve real-life problems using artificial intelligence (AI) techniques implemented in the Python programming environment. The model is based on 80,000 records and 60 features to predict whether a given sample belongs to a 5G user. The project involves training and comparing multiple AI models and analyzing their performance using the Area Under the Curve (AUC) evaluation metric. 
 
 ## Introduction:
 
-The rapid growth of 5G technology has resulted in a significant increase in the number of 5G users worldwide. For telecommunication service providers, accurately identifying potential 5G users and understanding their characteristics is crucial for targeted marketing campaigns. This project aims to leverage AI algorithms to predict 5G users based on various user attributes and communication-related data.
+The rapid growth of 5G technology has resulted in a significant increase in the number of 5G users worldwide.This project aims to leverage AI algorithms to predict 5G users based on data related to various user-related features.
 
 ## Methods:
 
 1. Data Preprocessing: The dataset, consisting of 60 fields, including categorical and numerical features, is first preprocessed to handle missing values, encode categorical variables, and normalize numerical features.
 2. Feature Selection: Relevant features are selected to enhance the models' predictive performance and reduce computational complexity.
-3. Model Training: At least two AI algorithms, such as logistic regression, decision trees, or neural networks, are implemented and trained on the preprocessed dataset.
+3. Model Training: Five algorithms (Logistic Regression, Decision Trees, Random Forest, Neural Networks, LightGBM) are trained on the preprocessed dataset.
 4. Model Evaluation: The trained models are evaluated using the AUC metric to assess their performance in predicting 5G users.
 5. Model Comparison and Analysis: The results obtained from different models are compared and analyzed to identify the most effective approach.
 
 ## Results and Discussion:
 
-The experimental results demonstrate the effectiveness of the implemented AI models in predicting 5G users. The AUC scores indicate the models' predictive capabilities, with higher scores indicating better performance. The report discusses the strengths and limitations of each model, provides insights into the dataset's characteristics, and explores potential areas for improvement.
+Result: The experimental results indicate that the implemented AI model, Random Forest, performs well in predicting 5G users. It has a higher AUC value and is more suitable for modeling in this experiment.
+
+Discussion: There are some areas for optimization: 
+
+Feature selection: By filtering the features and retaining those that are more important for the classification task, it is possible to improve the accuracy and generalization ability of the model. 
+
+Parameter tuning: By adjusting the hyperparameters of the model, such as learning rate, tree depth, minimum samples for node splitting, etc., it is possible to improve the performance of the model. 
+
+Using ensemble methods: It is possible to improve the accuracy and robustness of the model by integrating multiple models through methods such as voting, averaging, or stacking.
 
 ## Conclusion:
 
-This project successfully addresses the task of predicting 5G users using AI techniques. By leveraging user demographics and communication-related data, accurate predictions can be made to identify potential 5G users. The report concludes with suggestions for future enhancements and highlights the significance of AI in solving real-life problems.
+The project successfully utilized AI technology to predict 5G users. By leveraging relevant data and conducting accurate predictions, potential 5G users were identified. 
